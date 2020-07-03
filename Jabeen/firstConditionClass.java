@@ -1,0 +1,32 @@
+/**
+ * 
+ */
+package com.philips;
+
+/**
+ * @author 310225932
+ *
+ */
+public class firstConditionClass {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		final int age = 34;		 
+
+	    if (age > 0 && age < 13) {
+	      System.out.println("You are a kid");
+	    } else if (age >= 13 && age < 20) {
+	      System.out.println("You are a teenager");
+	    } else if (age >= 20) {
+	      System.out.println("You are an adult");
+	    } else {
+	      System.out.println("You don't exist!");
+	    }
+
+	}
+
+}
