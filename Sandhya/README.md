@@ -1,12 +1,17 @@
-public class DocumentSignature{
+public class MyFirstClass {
+  public static void main(final String[] args) {
+    final int age = 34;
  
-     public static void main(final String []args){
-        final boolean Reviewcomment = false ;
-        if (Reviewcomment){
-        System.out.println("Reject the document");    
-        }
-        else{
-        System.out.println("Approve the document");    
-        }
-     }
+    if (age > 0 && age < 13) {
+      System.out.println("You are a kid");
+    } else if (age >= 13 && age < 20) {
+      System.out.println("You are a teenager");
+    } else if (age >= 20) {
+      System.out.println("You are an adult");
+    } else {
+      System.out.println("You don't exist!");
+    }
+  }
+ 
 }
+
