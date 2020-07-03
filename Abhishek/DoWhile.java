@@ -1,5 +1,3 @@
-package com.philips.sample;
-
 public class DoWhile {
 	public static void main(final String[] args) {
 	    // 1. Initialisation
