@@ -1,0 +1,22 @@
+public class MyFirstClass {
+  public static void main(final String[] args) {
+    // Conditional statements - if, else, else if
+    /*
+     * Check for milk first, if milk does not exist, check for paneer, if paneer does exist come
+     * home! If milk exists - buy milk, don't buy paneer If milk does not exist, and paneer exists -
+     * buy paneer If both of them are not there - come home empty handed!
+     */
+ 
+    final boolean isMilkPresentInMilkStore = true;
+    final boolean isPaneerPresentInMilkStore = false;
+ 
+    if (isMilkPresentInMilkStore) {
+      System.out.println("I bought milk");
+    } else if (isPaneerPresentInMilkStore) {
+      System.out.println("I did not buy milk, but bought paneer");
+    } else {
+      System.out.println("I came out empty handed!");
+    }
+ 
+    // Conditional operators -- mathematical or logical
+  }
