@@ -1,0 +1,18 @@
+public class MYFAMILY{
+public static void main (String []args){
+
+int Familymember = 4;
+String subject = "MyFamily";
+String myname = "Sandhya"; 
+String husbandname = "Vijay"; 
+String daughtername = "Rashika"; 
+String sonname = "Rushank";
+System.out.println(subject);
+System.out.println(Familymember);
+System.out.println(myname);
+System.out.println(husbandname);
+System.out.println(daughtername);
+System.out.println(sonname);
+
+}
+}
