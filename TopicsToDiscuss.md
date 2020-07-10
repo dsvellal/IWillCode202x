@@ -2,7 +2,6 @@
 
 1. GIT Introduction
 2. Branching strategy of GIT
-3. Setting up GIT in eclipse & windows
 4. Methods in classes
 5. Cross-class and cross-method communication
 6. Quality at desk
@@ -19,3 +18,4 @@
 4. Conditions (If, else, nested, else-if)
 5. Loops (While, for, Do-while)
 6. Github account creation
+3. Setting up GIT in eclipse & windows
