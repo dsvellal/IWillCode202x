@@ -1,4 +1,4 @@
-package com.IWillCode;
+package gitpacktest;
 
 public class DiffArray {
   public static void main(final String[] args) {

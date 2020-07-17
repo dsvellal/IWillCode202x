@@ -1,4 +1,5 @@
-package com.IWillCode;
+package gitpacktest;
+//This is the second revision with variable.
 
 public class On20200703Simply {
   static int somevar = 10;

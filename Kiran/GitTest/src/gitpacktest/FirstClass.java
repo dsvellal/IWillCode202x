@@ -1,8 +1,8 @@
-package com.IWillCode;
+package gitpacktest;
 
 public class FirstClass {
   public static void main(final String[] args) {
-    final int age = -16;
+    final int age = 34;
 
     if ((age > 0) && (age < 13)) {
       System.out.println("You are a kid");

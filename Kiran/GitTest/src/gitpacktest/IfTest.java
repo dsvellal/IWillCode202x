@@ -1,4 +1,4 @@
-package com.IWillCode;
+package gitpacktest;
 
 public class IfTest {
   public static void main(final String[] args) {

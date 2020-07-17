@@ -1,4 +1,4 @@
-package com.IWillCode;
+package gitpacktest;
 
 public class RevTriangle {
   public static void main(final String args[]) {

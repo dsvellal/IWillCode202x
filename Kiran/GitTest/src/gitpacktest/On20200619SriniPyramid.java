@@ -1,4 +1,4 @@
-package com.IWillCode;
+package gitpacktest;
 
 import java.util.Scanner;
 
