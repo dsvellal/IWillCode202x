@@ -1,7 +1,5 @@
 # Topics to discuss
 
-* GIT Introduction
-* Branching strategy of GIT
 * Pull Requests
 * Try-catch blocks
 * Methods in classes
@@ -21,3 +19,5 @@
 * Loops (While, for, Do-while)
 * Github account creation
 * Setting up GIT in eclipse & windows
+* GIT Introduction
+* Branching strategy of GIT
