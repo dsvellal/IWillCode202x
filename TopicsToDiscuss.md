@@ -2,6 +2,7 @@
 
 1. GIT Introduction
 2. Branching strategy of GIT
+3. Try-catch blocks
 4. Methods in classes
 5. Cross-class and cross-method communication
 6. Quality at desk
