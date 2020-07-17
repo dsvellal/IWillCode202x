@@ -4,10 +4,6 @@ public class DoWhileExample {
     // 2. Termination condition
     // 3. Increment/decrement
 
-    // for loop - all three happens in 1-line
-    // while loop - all three happens in 3 different lines
-    // do while loop - all three happens in 3 lines
-
     final int length = 0;
     int i = 0; // Initialisation
     do {
