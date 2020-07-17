@@ -1,4 +1,5 @@
-public static void main(final String[] args) {
+public class RightAngleTriangle {
+  public static void main(final String[] args) {
     // Given the length of the triangle, print a right angle triangle made of 1's, using while loop.
     // eg: Length = 4
     // 1
@@ -19,3 +20,4 @@ public static void main(final String[] args) {
       i = i + 1;
     }
   }
+}
