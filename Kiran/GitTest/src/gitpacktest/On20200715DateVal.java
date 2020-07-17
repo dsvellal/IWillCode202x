@@ -1,6 +1,11 @@
 package gitpacktest;
 import java.util.Scanner;
 
+// This program checks if the date, month and year entered in that order are correct.
+// In version 1, program did nothing if the date was correct.
+// Based on feedback from Kala, if valid date is entered, message is shown in version 2.
+// Date check for 0 was corrected based on feedback from Kala.
+
 public class On20200715DateVal {
 
 	public static void main(String[] args) {
