@@ -15,3 +15,6 @@ https://github.com/dsvellal/IWillCode202x/blob/master/Assignments.md
 
 ## Topics discussed and to be discussed
 https://github.com/dsvellal/IWillCode202x/blob/master/TopicsToDiscuss.md
+
+## Important commands
+https://github.com/dsvellal/IWillCode202x/blob/master/ImportantCommands.md
