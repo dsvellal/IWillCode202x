@@ -12,6 +12,15 @@ git clone https://github.com/dsvellal/IWillCode202x.git
 git pull --rebase
 ```
 
+* To add files, before commiting them to the repository
+
+```
+git add <files_separated_by_space>
+
+or
+
+git add .
+```
 
 * To put a comment before commiting
 
