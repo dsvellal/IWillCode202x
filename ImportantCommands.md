@@ -1,19 +1,25 @@
 # Git Commands
 
-1. To pull from a repository
+* To clone a repository
+
+```
+git clone https://github.com/dsvellal/IWillCode202x.git
+```
+
+* To pull from a repository
 
 ```
 git pull --rebase
 ```
 
 
-2. To put a comment before commiting
+* To put a comment before commiting
 
 ```
 git commit -m "my comment"
 ```
 
-3. To push from local repository to remote repository, into the branch "master"
+* To push from local repository to remote repository, into the branch "master"
 
 ```
 git push origin master
