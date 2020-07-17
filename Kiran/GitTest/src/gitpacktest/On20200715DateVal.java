@@ -11,7 +11,7 @@ public class On20200715DateVal {
 	
 		System.out.println("Please enter the date. Please enter integers only.");
 		varDate = scnUser.nextInt();
-		if ((varDate<0) || (varDate>31)) {
+		if ((varDate<1) || (varDate>31)) {
 			System.out.println("Sorry, the date you entered is invalid.") ;
 			System.exit(0);
 		}
@@ -42,6 +42,7 @@ public class On20200715DateVal {
 		}
 		else if ((varMonth == 2) && (varDate > 28)) System.out.println("Sorry, in a non-leap year, February can have only 28 days, maximum !") ;
 		
+		System.out.println("Thanks go to you for entering a valid date !");
 		scnUser.close();
 	}
 }
