@@ -11,3 +11,9 @@ git pull --rebase
 ```
 git push origin master
 ```
+
+3. To put a comment before commiting
+
+```
+git commit -m "my comment"
+```
