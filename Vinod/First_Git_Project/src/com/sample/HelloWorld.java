@@ -1,10 +1,28 @@
 package com.sample;
 
-public class HelloWorld {
+import java.util.Scanner;
+public class HelloWorld{
 
-	public static void main(String[] args) {
-		System.out.println("Hello World");// TODO Auto-generated method stub
+	  public static void main(String[] args) {
 
-	}
+	    final Scanner scanner = new Scanner(System.in);
 
-}
+	    System.out.println("Please enter a number: ");
+
+	    try {
+
+	        final int number = scanner.nextInt();
+
+	        System.out.println("Entered number is: " + number);
+
+	      } catch (final Exception e) {
+
+	        System.out.println("Sorry, you entered something that's not an integer!");
+
+	        System.out.println("Please run the program again, and enter an integer");
+
+	      }
+
+	    }
+
+	  }
