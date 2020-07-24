@@ -33,3 +33,18 @@ git commit -m "my comment"
 ```
 git push origin master
 ```
+
+* To check the status of the local branch
+```
+git status
+```
+
+* To delete stale branches from local/remote repositories
+```
+git remote prune origin
+```
+
+* To check all branches available in local and remote
+```
+git branch -a
+```
