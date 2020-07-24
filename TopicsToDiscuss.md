@@ -1,7 +1,5 @@
 # Topics to discuss
 
-* Pull Requests
-* Try-catch blocks
 * Methods in classes
 * Cross-class and cross-method communication
 * Quality at desk
@@ -21,3 +19,5 @@
 * Setting up GIT in eclipse & windows
 * GIT Introduction
 * Branching strategy of GIT
+* Pull Requests
+* Try-catch blocks
