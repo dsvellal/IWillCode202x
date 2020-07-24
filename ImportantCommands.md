@@ -48,3 +48,9 @@ git remote prune origin
 ```
 git branch -a
 ```
+
+* To create a local branch of the repository
+```
+git checkout -b <branch_name>
+eg: git checkout -b wip_dsvellal
+```
