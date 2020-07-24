@@ -15,7 +15,7 @@ try{
 	    System.out.println("Entered number is: " + number);
 
 	  } catch (Exception e) {
-		  System.out.println("Sorry, you Ebter something that is not a integer!");
+		  System.out.println("Sorry, you Enter something that is not a integer!");
 		  System.out.println("Please rerun the program again, and enter an integer");
 	  }
 
