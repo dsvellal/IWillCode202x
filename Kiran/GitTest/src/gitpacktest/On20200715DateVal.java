@@ -13,35 +13,43 @@ public class On20200715DateVal {
 		Scanner scnUser = new Scanner (System.in) ;
 		
 		System.out.println("This is a date checking program.");
-	
-		System.out.println("Please enter the date. Please enter integers only.");
-		varDate = scnUser.nextInt();
-		if ((varDate<1) || (varDate>31)) {
-			System.out.println("Sorry, the date you entered is invalid.") ;
-			System.out.println("This program will stop now. Please click on RUN to re-execute it.");
-			System.exit(0);
-		}
 		
-		System.out.println("Please enter the month. Please enter integers only.");
-		varMonth = scnUser.nextInt();
-		if ((varMonth<0) || (varMonth>12)) {
-			System.out.println("Sorry, the month you entered is invalid.") ;
-			System.out.println("This program will stop now. Please click on RUN to re-execute it.");
-			System.exit(0);
-		}
-		if ((varMonth == 2) || (varMonth == 4) || (varMonth == 6) || (varMonth == 9) || (varMonth == 11) ){
-			if (varDate > 30) {
-				System.out.println("Sorry, month number " + varMonth + " does not have 31 days !");
-				System.out.println("This program will stop now. Please click on RUN to re-execute it.");
-				System.exit(0);
-				}
-						
-			if ((varMonth == 2) && (varDate > 29)) {
-				System.out.println("Sorry, February can have only 29 days, maximum !") ;
+		try {
+			System.out.println("Please enter the date. Please enter integers only.");
+			varDate = scnUser.nextInt();
+			if ((varDate<1) || (varDate>31)) {
+				System.out.println("Sorry, the date you entered is invalid.") ;
 				System.out.println("This program will stop now. Please click on RUN to re-execute it.");
 				System.exit(0);
 			}
+		} catch (final Exception e) {
+			System.out.println("Sorry, date cannot be a non-integer.") ;
+			System.out.println("This program will stop now. Please click on RUN to re-execute it.");
 		}
+		
+		
+		try {
+			System.out.println("Please enter the month. Please enter integers only.");
+			varMonth = scnUser.nextInt();
+			if ((varMonth<0) || (varMonth>12)) {
+				System.out.println("Sorry, the month you entered is invalid.") ;
+				System.out.println("This program will stop now. Please click on RUN to re-execute it.");
+				System.exit(0);
+			}
+			if ((varMonth == 2) || (varMonth == 4) || (varMonth == 6) || (varMonth == 9) || (varMonth == 11) ){
+				if (varDate > 30) {
+					System.out.println("Sorry, month number " + varMonth + " does not have 31 days !");
+					System.out.println("This program will stop now. Please click on RUN to re-execute it.");
+					System.exit(0);
+					}
+				if ((varMonth == 2) && (varDate > 29)) {
+					System.out.println("Sorry, February can have only 29 days, maximum !") ;
+					System.out.println("This program will stop now. Please click on RUN to re-execute it.");
+					System.exit(0);
+		} catch (final Exception eInvMonth) {
+				System.out.println("Sorry, month cannot be a non-integer.") ;
+				System.out.println("This program will stop now. Please click on RUN to re-execute it.");
+			}
 		
 		System.out.println("Please enter the year. Please enter integers only.");
 		varYear = scnUser.nextInt();
