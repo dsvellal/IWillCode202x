@@ -53,10 +53,13 @@ public class On20200715DateVal {
 		} catch (Exception e) {
 				System.out.println("Sorry, month cannot be a non-integer.") ;
 				System.out.println("This program will stop now. Please click on RUN to re-execute it.");
+				System.exit(1);
 			}
 		
-		System.out.println("Please enter the year. Please enter integers only.");
-		varYear = scnUser.nextInt();
+		try {
+			System.out.println("Please enter the year. Please enter integers only.");
+			varYear = scnUser.nextInt();
+			
 			if ((varMonth == 2) && (varDate > 29)) {
 				System.out.println("Sorry, February can have only 29 days, maximum !") ;
 				System.out.println("This program will stop now. Please click on RUN to re-execute it.");
@@ -66,6 +69,11 @@ public class On20200715DateVal {
 			System.out.println ("Sorry, in a non-leap year, February can have only 28 days, maximum !") ;
 			System.out.println("This program will stop now. Please click on RUN to re-execute it.");
 			System.exit(0);
+			}
+		} catch (Exception e) {
+			System.out.println("Sorry, year cannot be a non-integer.") ;
+			System.out.println("This program will stop now. Please click on RUN to re-execute it.");
+			System.exit(1);
 		}
 		System.out.println("Thanks go to you for entering a valid date !");
 		scnUser.close();
