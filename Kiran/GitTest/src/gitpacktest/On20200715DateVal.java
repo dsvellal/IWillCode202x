@@ -56,7 +56,7 @@ public class On20200715DateVal {
 			}
 		
 		System.out.println("Please enter the year. Please enter integers only.");
-		varYear = scnUser.nextInt();
+		varYear = scnUser.nextInt(); //On compilation I get an Exception in thread and this is the line number indicated.
 			if ((varMonth == 2) && (varDate > 29)) {
 				System.out.println("Sorry, February can have only 29 days, maximum !") ;
 				System.out.println("This program will stop now. Please click on RUN to re-execute it.");
