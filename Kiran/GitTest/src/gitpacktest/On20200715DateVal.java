@@ -27,6 +27,7 @@ public class On20200715DateVal {
 		} catch (Exception e) {
 			System.out.println("Sorry, date cannot be a non-integer.") ;
 			System.out.println("This program will stop now. Please click on RUN to re-execute it.");
+			System.exit(1);
 		}
 		
 		
@@ -53,6 +54,7 @@ public class On20200715DateVal {
 		} catch (Exception e) {
 				System.out.println("Sorry, month cannot be a non-integer.") ;
 				System.out.println("This program will stop now. Please click on RUN to re-execute it.");
+				System.exit(1);
 			}
 		
 		System.out.println("Please enter the year. Please enter integers only.");
