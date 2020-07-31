@@ -9,7 +9,9 @@ import java.util.Scanner;
 public class On20200715DateVal {
 
 	public static void main(String[] args) {
-		int varDate, varMonth, varYear = 0 ;
+		int varDate = 0 ;
+		int varMonth = 0 ; 
+		int varYear = 0 ;
 		Scanner scnUser = new Scanner (System.in) ;
 		
 		System.out.println("This is a date checking program.");
@@ -22,7 +24,7 @@ public class On20200715DateVal {
 				System.out.println("This program will stop now. Please click on RUN to re-execute it.");
 				System.exit(0);
 			}
-		} catch (final Exception e) {
+		} catch (Exception e) {
 			System.out.println("Sorry, date cannot be a non-integer.") ;
 			System.out.println("This program will stop now. Please click on RUN to re-execute it.");
 		}
@@ -46,21 +48,20 @@ public class On20200715DateVal {
 					System.out.println("Sorry, February can have only 29 days, maximum !") ;
 					System.out.println("This program will stop now. Please click on RUN to re-execute it.");
 					System.exit(0);
-		} catch (final Exception eInvMonth) {
+				} 
+			} 
+		} catch (Exception e) {
 				System.out.println("Sorry, month cannot be a non-integer.") ;
 				System.out.println("This program will stop now. Please click on RUN to re-execute it.");
 			}
 		
 		System.out.println("Please enter the year. Please enter integers only.");
 		varYear = scnUser.nextInt();
-		if ((varYear % 4 == 0) || (varYear %400 == 0)) {
 			if ((varMonth == 2) && (varDate > 29)) {
 				System.out.println("Sorry, February can have only 29 days, maximum !") ;
 				System.out.println("This program will stop now. Please click on RUN to re-execute it.");
 				System.exit(0);
 			}
-			
-		}
 		else if ((varMonth == 2) && (varDate > 28)) {
 			System.out.println ("Sorry, in a non-leap year, February can have only 28 days, maximum !") ;
 			System.out.println("This program will stop now. Please click on RUN to re-execute it.");
