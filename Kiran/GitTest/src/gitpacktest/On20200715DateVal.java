@@ -27,6 +27,7 @@ public class On20200715DateVal {
 		} catch (Exception e) {
 			System.out.println("Sorry, date cannot be a non-integer.") ;
 			System.out.println("This program will stop now. Please click on RUN to re-execute it.");
+			System.exit(1);
 		}
 		
 		
@@ -56,10 +57,15 @@ public class On20200715DateVal {
 				System.exit(1);
 			}
 		
+<<<<<<< HEAD
 		try {
 			System.out.println("Please enter the year. Please enter integers only.");
 			varYear = scnUser.nextInt();
 			
+=======
+		System.out.println("Please enter the year. Please enter integers only.");
+		varYear = scnUser.nextInt(); //On compilation I get an Exception in thread and this is the line number indicated.
+>>>>>>> af3b00c5000aad378ee27f3c83322a693ae23a5d
 			if ((varMonth == 2) && (varDate > 29)) {
 				System.out.println("Sorry, February can have only 29 days, maximum !") ;
 				System.out.println("This program will stop now. Please click on RUN to re-execute it.");

@@ -54,3 +54,16 @@ git branch -a
 git checkout -b <branch_name>
 eg: git checkout -b wip_dsvellal
 ```
+
+* To delete a local branch of the repository
+```
+git branch -D <branch_name>
+eg: git branch -D wip_kiransm74
+```
+
+* To delete a remote branch in the repository
+```
+git push origin --delete <branch_name>
+
+eg: git push origin --delete wip_kiransm74
+```
