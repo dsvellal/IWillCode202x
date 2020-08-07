@@ -3,10 +3,7 @@
 * Methods in classes
 * Cross-class and cross-method communication
 * Quality at desk
-* Projects & exporting them into jar, un-jaring the files
-* Build tools (Maven/Gradle)
-* Command line argument
-* Decompilation of .class file into a .java file
+* List of tools that we can use regularly (Cerberus, QAD, TICS, JSCPD, FunctionDefExtractor, UnitTestAnalytics, Sonarlint, etc.)
 
 ## Topics already discussed
 
