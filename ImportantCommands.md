@@ -67,3 +67,29 @@ git push origin --delete <branch_name>
 
 eg: git push origin --delete wip_kiransm74
 ```
+
+* To create a temporary space to store all the added changes (after git add .), use "stash" command like this
+```
+git stash
+Note: Perform this command after doing a git add .
+```
+
+* To apply the changes that are stashed on to a working repository, use git stash pop, like this
+```
+git stash pop
+```
+Generally git stash, and git stash pop are done when, I have made changes in my local branch, but i have to switch branches, and not lose my change. To do so, the following steps have to be followed:
+1. On branch1, do 
+- git add .
+- git sash
+2. Switch branches to branch2
+- git checkout branch2
+3. Rebase branch2
+- git pull --rebase
+4. Apply changes from branch1 to branch2
+- git stash pop
+5. Commit changes
+- git commit -m "Changes from branch1"
+6. Push
+- git pull --rebase
+- git push origin branch2
