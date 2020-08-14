@@ -13,6 +13,7 @@ public class ConstructorAndMethodsTest {
 		System.out.println(obj.getVendorName());
 		System.out.println(obj.getVendorAddress());
 		System.out.println(obj.getVendorID());
+		System.out.println("___________________________");
 	}
 
 }
