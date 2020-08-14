@@ -4,13 +4,12 @@ public class ConstructorsAndMethods {
 	private String name;
 	private int age;
 	private String designation;
+	private String address;
 	
 	// Default stuff - constructor
 	// has access modifier, name - nameOfTheClass (compulsory), arguments - optional
 	public ConstructorsAndMethods() {
-		name = "Datta";
-		age = 34;
-		designation = "Competency specialist";
+
 	}
 	
 	// Non-default constructor
@@ -18,6 +17,12 @@ public class ConstructorsAndMethods {
 		name = myName;
 		age = myAge;
 		designation = myDesignation;
+	}
+	
+	public ConstructorsAndMethods(int myAge, String myName, String myAddress) {
+		name = myName;
+		age = myAge;
+		address = myAddress;
 	}
 	
 	public String getName() {
@@ -30,5 +35,9 @@ public class ConstructorsAndMethods {
 	
 	public String getDesignation() {
 		return this.designation;
+	}
+	
+	public String getAddress() {
+		return address;
 	}
 }

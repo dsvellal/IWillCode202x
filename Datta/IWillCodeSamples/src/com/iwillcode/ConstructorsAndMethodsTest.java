@@ -8,11 +8,16 @@ public class ConstructorsAndMethodsTest {
 		
 		ConstructorsAndMethods mahesh = new ConstructorsAndMethods("Mahesh", 15, "Engineer");
 		printValuesOf(mahesh);
+		
+		ConstructorsAndMethods kala = new ConstructorsAndMethods(18, "Kala", "PIC-B");
+		printValuesOf(kala);
 	}
 	
 	private static void printValuesOf(ConstructorsAndMethods obj) {
-		System.out.println(obj.getAge());
-		System.out.println(obj.getName());
-		System.out.println(obj.getDesignation());
+		System.out.println("Age: " + obj.getAge());
+		System.out.println("Name: " + obj.getName());
+		System.out.println("Designation: " + obj.getDesignation());
+		System.out.println("Address: " + obj.getAddress());
+		System.out.println("-------------------");
 	}
 }
