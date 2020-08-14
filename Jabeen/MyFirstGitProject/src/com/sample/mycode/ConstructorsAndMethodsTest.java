@@ -13,10 +13,11 @@ public class ConstructorsAndMethodsTest {
 	}
 	
 	public static void printDetails(ConstructorsAndMethods myObj) {
-		System.out.println(" Name = "+myObj.getName());
+		System.out.println("Name = "+myObj.getName());
 		System.out.println("Age = "+ myObj.getAge());
 		System.out.println("Designation = "+myObj.getDesignation());
 		System.out.println("Security No = "+myObj.getSecurityNo());
+		System.out.println("---------------------------------------");
 	}	
 
 }
