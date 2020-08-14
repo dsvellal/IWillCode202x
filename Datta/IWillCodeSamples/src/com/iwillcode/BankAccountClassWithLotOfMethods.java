@@ -32,7 +32,7 @@ public class BankAccountClassWithLotOfMethods {
 		return accountNumber;
 	}
 	
-	public void getAccountBalance() {
+	public void printAccountBalance() {
 		System.out.println(accountBalance);
 	}
 }
