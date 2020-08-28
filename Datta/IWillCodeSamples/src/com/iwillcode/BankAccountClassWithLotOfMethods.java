@@ -1,6 +1,9 @@
 package com.iwillcode;
 
 public class BankAccountClassWithLotOfMethods {
+	// Store and retrieve values
+	// Credit
+	// Debit
 	private int accountNumber;
 	private String accountHolderName;
 	private double accountBalance;
