@@ -1,7 +1,5 @@
 # Topics to discuss
 
-* Methods in classes
-* Cross-class and cross-method communication
 * Quality at desk
 * List of tools that we can use regularly (Cerberus, QAD, TICS, JSCPD, FunctionDefExtractor, UnitTestAnalytics, Sonarlint, etc.)
 
@@ -18,3 +16,5 @@
 * Branching strategy of GIT
 * Pull Requests
 * Try-catch blocks
+* Methods in classes
+* Cross-class and cross-method communication
