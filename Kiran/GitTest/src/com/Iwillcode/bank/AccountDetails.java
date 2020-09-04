@@ -18,6 +18,7 @@ public class AccountDetails {
 	private String vIFSCCode ;
 	private String vBranchCode ;
 	private String vBankCode ;
+	private double vBankBalance ;
 	
 	public AccountDetails (long vAadhaarCard, String vName, String vDoB, String vAddress, long vMobileNumber, String vReferer) {
 		//Assigning values to user entered properties
@@ -37,6 +38,17 @@ public class AccountDetails {
 		
 	} //This is for constructor
 	
+	public long getBankAccountNumber() {
+		return this.vBankAcNumber;
+	}
+
+	public double getAccountBalance() {
+		return this.vBankBalance;
+	}
+	
+	public void setAccountBalance(double accountBalance) {
+		this.vBankBalance = accountBalance;
+	}
 	
 
 } //This is for class AccountDetails
