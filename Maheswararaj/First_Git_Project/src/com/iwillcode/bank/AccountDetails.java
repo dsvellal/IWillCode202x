@@ -1,41 +1,55 @@
 package com.iwillcode.bank;
 
 public class AccountDetails {
-	// Store and retrieve values
-	// Credit
-	// Debit
-	private int accountNumber;
-	private String accountHolderName;
+	static long baseAccountNumber = 1000000000l;
+	// Some of these are user entered properties
+	private long aadhaarCard;
+	private String nameOfAccountHolder;
+	private String dob;
+	private String address;
+	private long mobileNumber;
+	private String refererName;
 	private double accountBalance;
 	
-	public AccountDetails(String nameOfAccountHolder) {
-		accountHolderName = nameOfAccountHolder;
-		accountBalance = 0;
-		accountNumber = accountHolderName.hashCode();
+	// Some of these are autoset by the bank
+	private long bankAccountNumber;
+	private String type; // Savings or current or trading or overdraft or loan
+	private String ifscCode;
+	private String branchCode;
+	private String bankCode;
+	
+	public AccountDetails(long aadhaarCard, String nameOfAccountHolder, String dob, String address, long mobileNumber, String refererName) {
+		// Assigning values to user entered properties
+		this.aadhaarCard = aadhaarCard;
+		this.nameOfAccountHolder = nameOfAccountHolder;
+		this.dob = dob;
+		this.address = address;
+		this.mobileNumber = mobileNumber;
+		this.refererName = refererName;
+		
+		// Assigning system generated property values
+		this.bankAccountNumber = getAccountNumber();
+		this.type = "Savings";
+		this.ifscCode = "HDFC00001750";
+		this.branchCode = "1750";
+		this.bankCode = "HDFC0000";
+		this.accountBalance = 0d;
 	}
 
-	public void credit(double valueToBeAdded) {
-		if (valueToBeAdded > 0) {
-			accountBalance = accountBalance + valueToBeAdded;
-		} else {
-			System.out.println("Invalid value being credited. Operation cancelled!");
-		}
-		
+	private long getAccountNumber() {
+		baseAccountNumber = baseAccountNumber + 1;
+		return baseAccountNumber;
+	}
+
+	public long getBankAccountNumber() {
+		return this.bankAccountNumber;
+	}
+
+	public double getAccountBalance() {
+		return this.accountBalance;
 	}
 	
-	public void debit(double valueToBeDebited) {
-		if (accountBalance >= valueToBeDebited) {
-			accountBalance = accountBalance - valueToBeDebited;
-		} else {
-			System.out.println("Invalid funds");
-		}
-	}
-	
-	public int getAccountNumber() {
-		return accountNumber;
-	}
-	
-	public void printAccountBalance() {
-		System.out.println(accountBalance);
+	public void setAccountBalance(double accountBalance) {
+		this.accountBalance = accountBalance;
 	}
 }
