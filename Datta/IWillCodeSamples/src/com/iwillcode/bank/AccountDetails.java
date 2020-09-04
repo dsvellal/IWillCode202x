@@ -48,4 +48,8 @@ public class AccountDetails {
 	public double getAccountBalance() {
 		return this.accountBalance;
 	}
+	
+	public void setAccountBalance(double accountBalance) {
+		this.accountBalance = accountBalance;
+	}
 }
