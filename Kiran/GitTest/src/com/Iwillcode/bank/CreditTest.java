@@ -17,7 +17,7 @@ public class CreditTest {
 		Credit creditClassInstance = new Credit();
 		creditClassInstance.credit(fromAccount, toAccount, 100d);
 		checkIfAccountDetailsAreCorrect(900d, fromAccount);
-		checkIfAccountDetailsAreCorrect(1100d, toAccount);
+		checkIfAccountDetailsAreCorrect(1100d, toAccount); // This line is why the message "Transaction was successful" is printed twice.
 		printAccountBalance(fromAccount, toAccount);
 		
 		creditClassInstance.credit(fromAccount, toAccount, 1000d);
@@ -28,7 +28,7 @@ public class CreditTest {
 	
 	private static void checkIfAccountDetailsAreCorrect(double expectedAccountBalance, AccountDetails account) {
 		if (expectedAccountBalance == account.getAccountBalance()) {
-			System.out.println("Transaction was successful");
+			System.out.println("Transaction was successful for " + account.getBankAccountNumber());
 		} else {
 			System.out.println("Transaction failed! Please take a look!");
 		}
