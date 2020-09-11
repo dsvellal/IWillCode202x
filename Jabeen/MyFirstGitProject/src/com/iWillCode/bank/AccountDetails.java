@@ -18,6 +18,7 @@ public class AccountDetails {
 	private String ifscCode;
 	private String branchCode;
 	private String bankCode;
+	private double acctBalance =0;
 	
 	public AccountDetails(long adhaarCard, String name, String address, String dob, long mobileNo, String referenceName) {
 		this.adhaarCard = adhaarCard;
@@ -38,6 +39,25 @@ public class AccountDetails {
 		baseAcctNo = baseAcctNo +1;
 		return baseAcctNo;
 	}
+	
+	public long getBankAcctNo() {
+		return this.bankAcctNo;
+	}
+	
+	public void setAcctBalance(double amtToBeAdded) {
+		if (amtToBeAdded > 0) {
+			//this.acctBalance = this.acctBalance + amtToBeAdded;
+			this.acctBalance = amtToBeAdded;
+			System.out.println("Account Balance is set to : "+this.acctBalance);
+		}
+		else
+			System.out.println("The amount to be added to the Balance is incorrect");
+	}
+	
+	public double getAcctBalance() {
+		return this.acctBalance;
+	}
+	
 	public void printAcctDetails()
 	{
 		System.out.println("\n Bank Account Details ");
@@ -52,6 +72,7 @@ public class AccountDetails {
 		System.out.println("IFSC Code :"+ifscCode);
 		System.out.println("Branch Code :"+branchCode);
 		System.out.println("Bank Code :"+bankCode);
+		System.out.println("Account Balance :"+acctBalance);
 			
 	}
 		
