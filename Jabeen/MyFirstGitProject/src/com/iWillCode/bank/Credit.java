@@ -5,16 +5,15 @@ public class Credit {
 		if (fromAcct.getAcctBalance() > creditAmount)
 		{
 			double balanceAmtInFromAcct = fromAcct.getAcctBalance() - creditAmount;
-			System.out.println("Balance amt in From Acct = "+ balanceAmtInFromAcct);
 			fromAcct.setAcctBalance(balanceAmtInFromAcct);
 			
 			
 			double toAcctNewBalance = toAcct.getAcctBalance() + creditAmount;
-			System.out.println("Balance amt in To Acct = "+ toAcctNewBalance);
 			toAcct.setAcctBalance(toAcctNewBalance);
+			System.out.println("Credit Transaction is successful for Rs: "+creditAmount);
 		}
 		else 
-			System.out.println(" Credit Transaction failed");
+			System.out.println("Credit Transaction failed for Rs: "+creditAmount);
 	}
 
 }

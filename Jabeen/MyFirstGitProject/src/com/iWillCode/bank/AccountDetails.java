@@ -46,9 +46,7 @@ public class AccountDetails {
 	
 	public void setAcctBalance(double amtToBeAdded) {
 		if (amtToBeAdded > 0) {
-			//this.acctBalance = this.acctBalance + amtToBeAdded;
 			this.acctBalance = amtToBeAdded;
-			System.out.println("Account Balance is set to : "+this.acctBalance);
 		}
 		else
 			System.out.println("The amount to be added to the Balance is incorrect");
