@@ -3,8 +3,8 @@ package com.iwillcode.bank;
 public class CreditTest {
 
 	public static void main(String[] args) throws Exception {
-		AccountDetails fromAccount = new AccountDetails(1L, "Datta", "06/12/1985", "Bangalore", 9L, "Kiran");
-		AccountDetails toAccount = new AccountDetails(2L, "Vidhathri", "19/11/1990", "Bangalore", 8L, "Datta");
+		AccountDetails fromAccount = new AccountDetails(1L, "a", "01/12/1985", "Bangalore", 9L, "Kiran");
+		AccountDetails toAccount = new AccountDetails(2L, "b", "01/11/1990", "Bangalore", 8L, "Datta");
 		
 		fromAccount.setAccountBalance(1000d);
 		checkIfAccountDetailsAreCorrect(1000d, fromAccount);
