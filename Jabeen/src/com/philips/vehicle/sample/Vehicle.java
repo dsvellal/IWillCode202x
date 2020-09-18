@@ -19,6 +19,14 @@ public class Vehicle {
     	yearmodel = modelno;
     }
     
+    public void setAllVehicleProperties(String reg, String name, int modelno, String clr)
+    {
+    	regno = reg;
+    	ownername = name;
+    	yearmodel = modelno; 
+    	color = clr;
+    }
+    
     public void displayProperties(String brand, String Type) {
     	System.out.println("Registration no ="+regno);
     	System.out.println("Owner = "+ownername);

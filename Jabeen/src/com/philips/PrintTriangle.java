@@ -4,14 +4,11 @@ import java.util.*;
 public class PrintTriangle {
 	
 	
-	public void printRightAngledTriangle(int length) {
-		printLevel(length, "Right");
-	}
-	
-	public void printLevel(int length, String type)
+	public void drawTriangle(int length, String type)
 	{
 		int i = 1;
-		int j, k = 0;
+		int j= 0;
+		int k = 0;
 		
 		while (i <= length) { // Controls the length
 	      if (type == "Inverted")
@@ -19,7 +16,7 @@ public class PrintTriangle {
 	    	j = i;
 	    	k = length;
 	      }
-	      else
+	     else
 	      {
 	    	  j = 1;
 	    	  k = i;
@@ -33,23 +30,6 @@ public class PrintTriangle {
 		}
 	}
 		
-	/*public void printInvertedTriangle(int length) {
-		int i = 1;
-	    while (i <= length) { // Controls the length
-		  int j = i;
-	      while (j <= length) { // Controls what happens at every level of the length
-	        System.out.print("1 ");
-	        j = j + 1;
-	      }
-	      System.out.println();
-	      i = i + 1;
-	    }		
-	} */
-	
-	
-	public void printInvertedTriangle(int length) {
-	  printLevel(length, "Inverted");
-     }
 	
 	public void printPyramid(int length) {
 		int i = length;
@@ -70,6 +50,18 @@ public class PrintTriangle {
 		}
 	}
 	
+	/*public void printInvertedTriangle(int length) {
+	int i = 1;
+    while (i <= length) { // Controls the length
+	  int j = i;
+      while (j <= length) { // Controls what happens at every level of the length
+        System.out.print("1 ");
+        j = j + 1;
+      }
+      System.out.println();
+      i = i + 1;
+    }		
+} */
 	/*public void printRightAngledTriangle(int length) {
 		int i = 1;
 	    while (i <= length) { // Controls the length
@@ -118,21 +110,22 @@ public class PrintTriangle {
 		    if (string.equalsIgnoreCase("Inverted") | string.equalsIgnoreCase("Right Angled") | (string.equalsIgnoreCase("Equilateral")) ) {
 		    	System.out.println ("What is the depth of the triangle : ");
 		    	length = sc1.nextInt();
-		    }
-		    if (length <=1 )	{
-		    	System.out.println(" Please enter valid depth for the triangle to be printed");
-		    }
-		    else if (string.equalsIgnoreCase("Inverted")) {
-		    	printTriangle.printInvertedTriangle(length);
-		    	System.out.println();
-		    }
-		    else if (string.equalsIgnoreCase("Right Angled")) {
-		    	printTriangle.printRightAngledTriangle(length);
-		    	System.out.println();
-		    }
-		    else if(string.equalsIgnoreCase("Equilateral")){
-		    	printTriangle.printPyramid(length);
-		    	System.out.println();
+		        if (length <=1 )	{
+		    		System.out.println(" Please enter valid depth for the triangle to be printed");
+		    	}
+		   	    else if (string.equalsIgnoreCase("Inverted")) {
+		   	    	printTriangle.drawTriangle(length, "Inverted");
+		   	    	System.out.println();
+		   	    }
+		   	    else if (string.equalsIgnoreCase("Right Angled")) {
+		   	    	printTriangle.drawTriangle(length, "Right Angled");
+		   	    	System.out.println();
+		   	    }
+		   	    else if(string.equalsIgnoreCase("Equilateral")){
+		   	    	printTriangle.printPyramid(length);
+		   	    	System.out.println();
+		   	    }
+		   	     	    
 		    }
 		    else {
 		    	System.out.println("This type of triangle cannot be printed !! Pls choose a valid option - Right Angled, Inverted or Equilateral");

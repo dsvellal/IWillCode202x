@@ -5,20 +5,13 @@ public class TwoWheeler extends Vehicle {
 	String brand;
 	String Type;
 	
-	Vehicle newv = new Vehicle();
-	
 	public TwoWheeler() {
 		// TODO Auto-generated constructor stub
 	
 	}
 	
 	public TwoWheeler (String regno, String name, int model, String clr, String br, String typ) {
-		super.setRegNo(regno);
-		super.setOwner(name);
-		super.setModel(model);
-		super.color = clr;
-		
-		newv.setRegNo(regno);
+		super.setAllVehicleProperties(regno, name, model, clr);
 		brand = br;
 		Type = typ;
 	}
