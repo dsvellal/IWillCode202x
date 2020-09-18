@@ -13,7 +13,7 @@ public class TwoWheeler extends Vehicle {
 	}
 	
 	public TwoWheeler (String regno, String name, int model, String clr, String br, String typ) {
-		//super.setRegNo(regno);
+		super.setRegNo(regno);
 		super.setOwner(name);
 		super.setModel(model);
 		super.color = clr;
@@ -23,12 +23,8 @@ public class TwoWheeler extends Vehicle {
 		Type = typ;
 	}
 	
-	public void displayProperties() {
-		System.out.println("My vehicle is a Two Wheeler");
-		super.displayProperties();
-		System.out.println("Color = "+color);
-		System.out.println("Brand ="+brand);
-		System.out.println("Type ="+Type);
+	public void displayTwoWheelerProperties() {
+		super.displayProperties(brand, Type);
 	}
 	
 

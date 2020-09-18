@@ -20,13 +20,8 @@ public class Car extends Vehicle {
 		Type = type;
 	}
 	
-	
-	public void displayProperties() {
-		System.out.println("My Vehicle is a Car");
-		super.displayProperties();
-		System.out.println("Color = "+color);
-		System.out.println("Brand ="+brand);
-		System.out.println(""+Type);
+	public void displayCarProperties()
+	{
+		super.displayProperties(brand, Type);
 	}
-	
 }

@@ -19,10 +19,13 @@ public class Vehicle {
     	yearmodel = modelno;
     }
     
-    public void displayProperties() {
+    public void displayProperties(String brand, String Type) {
     	System.out.println("Registration no ="+regno);
     	System.out.println("Owner = "+ownername);
     	System.out.println("Model = "+yearmodel);
+    	System.out.println("Color = "+color);
+		System.out.println("Brand ="+brand);
+		System.out.println(""+Type);
     	
     }
 }

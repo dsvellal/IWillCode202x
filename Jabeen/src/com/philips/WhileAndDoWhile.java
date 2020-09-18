@@ -8,7 +8,7 @@ public class WhileAndDoWhile {
 	public void rightAngledTriangle(int length) {
 		int i = 1;
 		do {
-	     int j = 1;
+	     int j = i;
 	      while (j <= i) { // Controls what happens at every level of the length
 	        System.out.print("1 ");
 	        j = j + 1;
