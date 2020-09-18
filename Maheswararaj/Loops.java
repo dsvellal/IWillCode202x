@@ -1,4 +1,4 @@
-Public class Loops{
+public class Loops{
   public static void main(final String[] args) {
     // Loops.
     // for, while, do-while
