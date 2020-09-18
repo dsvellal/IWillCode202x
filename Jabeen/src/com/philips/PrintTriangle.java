@@ -16,6 +16,19 @@ public class PrintTriangle {
 	      i = i + 1;
 	    }
 	}
+	// Using d0 while
+	/*public void rightAngledTriangle(int length) {
+		int i = 1;
+		do {
+	     int j = i;
+	      while (j <= i) { // Controls what happens at every level of the length
+	        System.out.print("1 ");
+	        j = j + 1;
+	      }
+	      System.out.println();
+	      i = i + 1;
+	    } while (i <= length);
+	} */
 	
 	public void printInvertedTriangle(int length) {
 		int i = 1;
@@ -49,28 +62,54 @@ public class PrintTriangle {
 		}
 	}
 	
-
-	public static void main(final String[] args) {
-	    // Given the length of the triangle, print a right angle triangle made of 1's, using while loop.
-	    // eg: Length = 4
-	    // 1
-	    // 1 1
-	    // 1 1 1
-	    // 1 1 1 1
-	    System.out.println("What should be the length (in integer): ");
-	    final Scanner scn = new Scanner(System.in);
-	    final int length = scn.nextInt();
-	    
-	    System.out.println("\nRight Angled Triangle ");
-	    PrintTriangle pt = new PrintTriangle();
-		pt.printRightAngledTriangle(length);
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// Print 3 types of triangles (Inverted, Right Angled, Equilateral)
+		// Ask the user for which type of triangle is needed and print the same.
+		// IDE that gets inputs from command line
 		
-		System.out.println("\nInverted Triangle ");
-		pt.printInvertedTriangle(length);
+		int condition = 0;
+		int length = 0;
 		
-		System.out.println("\nPyramid ");
-		pt.printPyramid(length);
-	  }
-	
+		PrintTriangle printTriangle = new PrintTriangle();
+		
+		
+		do {
+		    System.out.println("Which type of triangle would you like to print ? : ");
+		    final Scanner sc1 = new Scanner(System.in);
+		    String string = null;
+		    string = sc1.nextLine();		    	    
+		   
+		    if (string.equalsIgnoreCase("Inverted") | string.equalsIgnoreCase("Right Angled") | (string.equalsIgnoreCase("Equilateral")) ) {
+		    	System.out.println ("What is the depth of the triangle : ");
+		    	length = sc1.nextInt();
+		    }
+		    if (length <=1 )	{
+		    	System.out.println(" Please enter valid depth for the triangle to be printed");
+		    }
+		    else if (string.equalsIgnoreCase("Inverted")) {
+		    	printTriangle.printInvertedTriangle(length);
+		    	System.out.println();
+		    }
+		    else if (string.equalsIgnoreCase("Right Angled")) {
+		    	printTriangle.printRightAngledTriangle(length);
+		    	System.out.println();
+		    }
+		    else if(string.equalsIgnoreCase("Equilateral")){
+		    	printTriangle.printPyramid(length);
+		    	System.out.println();
+		    }
+		    else {
+		    	System.out.println("This type of triangle cannot be printed !! Pls choose a valid option - Right Angled, Inverted or Equilateral");
+		    }
+		    
+		    System.out.println("Do you need to print another triangle (0/1) : ");
+		    condition = sc1.nextInt();
+		    if (condition == 0 )
+		    	System.out.println("This is the end. Thank You ");
+		    System.out.println();
+		} while (condition == 1);
+				
+	}
 	
 }
