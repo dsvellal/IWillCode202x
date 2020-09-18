@@ -5,35 +5,38 @@ public class PrintTriangle {
 	
 	
 	public void printRightAngledTriangle(int length) {
-		int i = 1;
-	    while (i <= length) { // Controls the length
-	      int j = 1;
-	      while (j <= i) { // Controls what happens at every level of the length
-	        System.out.print("1 ");
-	        j = j + 1;
-	      }
-	      System.out.println();
-	      i = i + 1;
-	    }
+		printLevel(length, "Right");
 	}
-	// Using d0 while
-	/*public void rightAngledTriangle(int length) {
+	
+	public void printLevel(int length, String type)
+	{
 		int i = 1;
-		do {
-	     int j = i;
-	      while (j <= i) { // Controls what happens at every level of the length
+		int j, k = 0;
+		
+		while (i <= length) { // Controls the length
+	      if (type == "Inverted")
+	      {
+	    	j = i;
+	    	k = length;
+	      }
+	      else
+	      {
+	    	  j = 1;
+	    	  k = i;
+	      }
+		  while (j <= k) { // Controls what happens at every level of the length
 	        System.out.print("1 ");
 	        j = j + 1;
 	      }
-	      System.out.println();
-	      i = i + 1;
-	    } while (i <= length);
-	} */
-	
-	public void printInvertedTriangle(int length) {
+		  System.out.println();	
+		  i = i + 1;
+		}
+	}
+		
+	/*public void printInvertedTriangle(int length) {
 		int i = 1;
 	    while (i <= length) { // Controls the length
-	      int j = i;
+		  int j = i;
 	      while (j <= length) { // Controls what happens at every level of the length
 	        System.out.print("1 ");
 	        j = j + 1;
@@ -41,7 +44,12 @@ public class PrintTriangle {
 	      System.out.println();
 	      i = i + 1;
 	    }		
-	}
+	} */
+	
+	
+	public void printInvertedTriangle(int length) {
+	  printLevel(length, "Inverted");
+     }
 	
 	public void printPyramid(int length) {
 		int i = length;
@@ -61,6 +69,33 @@ public class PrintTriangle {
 			
 		}
 	}
+	
+	/*public void printRightAngledTriangle(int length) {
+		int i = 1;
+	    while (i <= length) { // Controls the length
+	      int j = 1;
+	      while (j <= i) { // Controls what happens at every level of the length
+	        System.out.print("1 ");
+	        j = j + 1;
+	      }
+	      System.out.println();
+	      i = i + 1;
+	    }
+	} */
+	
+	// Using d0 while
+		/*public void rightAngledTriangle(int length) {
+			int i = 1;
+			do {
+		     int j = i;
+		      while (j <= i) { // Controls what happens at every level of the length
+		        System.out.print("1 ");
+		        j = j + 1;
+		      }
+		      System.out.println();
+		      i = i + 1;
+		    } while (i <= length);
+		} */
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
