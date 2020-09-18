@@ -1,3 +1,10 @@
+##
+
+1. Run Cerberus's CPD command for token-count 50 (sample command: java -jar .\cerberus-4.0.jar CPD --files=C:/Code/GitRepos/IWillCode202x/Datta --format=text --language=java --minimum-tokens=50 > C:/Temp/Cerberus_CPD_Report.txt). 
+2. Identify duplicates reported in the generated report. 
+3. Kill the duplicates
+4. Commit the code back!
+
 ## 20200911 - Eliminate duplicates in your code, bring your code
 
 1. Please see if you can eliminate duplicates in your code, written in IWillCode202x
