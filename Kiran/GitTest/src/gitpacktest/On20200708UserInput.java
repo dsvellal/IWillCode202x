@@ -3,6 +3,17 @@ package gitpacktest;
 import java.util.Scanner;
 
 public class On20200708UserInput {
+	public static int getUserIp () {
+		final Scanner ScnUserSel = new Scanner(System.in);
+	    int vNum1 = 0;
+	    
+		System.out.println("Please enter the number");
+		vNum1 = ScnUserSel.nextInt();
+		    
+	    ScnUserSel.close();
+	    
+	    return vNum1 ;		
+	} // This is for getUserIp
   public static void main(final String[] args) {
 
     final Scanner ScnUserSel = new Scanner(System.in);
@@ -21,10 +32,15 @@ public class On20200708UserInput {
     System.out.println("Option you selected is: " + UserSel);
 
     if (UserSel == 1) {
-      System.out.println("Please enter the first number");
+   	
+    	Num1 = getUserIp();
+    	System.out.println("The value of Num1 is:"+Num1);
+    	Num2 = getUserIp();
+    	
+      /*System.out.println("Please enter the first number");
       Num1 = ScnUserSel.nextInt();
       System.out.println("Please enter the second number");
-      Num2 = ScnUserSel.nextInt();
+      Num2 = ScnUserSel.nextInt();*/
       if (Num1 > Num2) {
         System.out.println("The first number you entered is greater than the second one.");
       } else {
