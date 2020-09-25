@@ -16,9 +16,4 @@ public class TwoWheeler extends Vehicle {
 		Type = typ;
 	}
 	
-	public void displayTwoWheelerProperties() {
-		super.displayProperties(brand, Type);
-	}
-	
-
 }

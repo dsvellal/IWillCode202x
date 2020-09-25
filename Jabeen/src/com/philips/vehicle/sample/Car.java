@@ -17,8 +17,4 @@ public class Car extends Vehicle {
 		Type = type;
 	}
 	
-	public void displayCarProperties()
-	{
-		super.displayProperties(brand, Type);
-	}
 }
