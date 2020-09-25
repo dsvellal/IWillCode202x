@@ -1,5 +1,7 @@
 package com.iWillCode.bank;
 
+import java.util.Scanner;
+
 public class CreditTest {
 
 	public static void main(String[] args) {
@@ -8,17 +10,28 @@ public class CreditTest {
 		AccountDetails fromAcct = new AccountDetails (12345678901234L, "Jabeen", "RT Nagar Bangalore", "08-04-1990", 9886821518L,"Sonu");
 		AccountDetails toAcct = new AccountDetails (1234567891, "Reena", "Hebbal Bangalore", "08-07-1990", 988767523,"Jabeen");
 		
-		boolean status = acctInitialBalance(fromAcct, toAcct, 1500d, 1000d);
-		if (status == true) {
-				//printAccountBalance(fromAcct, toAcct);
-				//performTransaction(fromAcct,toAcct,1000d);
-				//performTransaction(fromAcct,toAcct,100d);
-				//performTransaction(fromAcct,toAcct,700d);
-			double[] moneyToCredit = {1000d,100d,700d};
+		boolean status = acctInitialBalance(fromAcct, toAcct, 15000d, 10000d);
+		printAccountBalance(fromAcct, toAcct);
+		
+		Scanner scan = new Scanner(System.in);
+				
+		do {
+			System.out.println("Enter the Amount to Credit : ");
+			double amtToCredit = scan.nextDouble();
+			performTransaction(fromAcct,toAcct,amtToCredit);
+			System.out.println("Do yo need to make another Credit Transaction ? ");
+			String input = scan.next();
+			if ("Yes".equalsIgnoreCase(input))
+				status = true;
+			else
+				status = false;
+			/*double[] moneyToCredit = {1000d,100d,700d};
 			for (double creditMoney: moneyToCredit) {
 				performTransaction(fromAcct,toAcct,creditMoney);
-			}
-		}
+			}*/
+			
+			}while (status == true);
+			System.out.println("Transaction is complete. Thank You !");
 					
 	}
 	private static boolean acctInitialBalance (AccountDetails fromAcct, AccountDetails toAcct, double fromAcctBalance, double toAcctBalance)
