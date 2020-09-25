@@ -107,21 +107,22 @@ public class PrintTriangle {
 		    String string = null;
 		    string = sc1.nextLine();		    	    
 		   
-		    if (string.equalsIgnoreCase("Inverted") | string.equalsIgnoreCase("Right Angled") | (string.equalsIgnoreCase("Equilateral")) ) {
+		    if ("Inverted".equalsIgnoreCase(string) | "Right Angled".equalsIgnoreCase(string) | ("Equilateral".equalsIgnoreCase(string)) ) {
 		    	System.out.println ("What is the depth of the triangle : ");
 		    	length = sc1.nextInt();
 		        if (length <=1 )	{
 		    		System.out.println(" Please enter valid depth for the triangle to be printed");
 		    	}
-		   	    else if (string.equalsIgnoreCase("Inverted")) {
-		   	    	printTriangle.drawTriangle(length, "Inverted");
+		   	    //else if (string.equalsIgnoreCase("Inverted")) {
+		        else if("Inverted".equalsIgnoreCase(string)) {
+		           	printTriangle.drawTriangle(length, "Inverted");
 		   	    	System.out.println();
 		   	    }
-		   	    else if (string.equalsIgnoreCase("Right Angled")) {
+		   	    else if ("Right Angled".equalsIgnoreCase(string)) {
 		   	    	printTriangle.drawTriangle(length, "Right Angled");
 		   	    	System.out.println();
 		   	    }
-		   	    else if(string.equalsIgnoreCase("Equilateral")){
+		   	    else if("Equilateral".equalsIgnoreCase(string)){
 		   	    	printTriangle.printPyramid(length);
 		   	    	System.out.println();
 		   	    }

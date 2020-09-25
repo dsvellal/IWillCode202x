@@ -6,7 +6,6 @@ public class largeSmallNumbers {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		int total = 4;
 		int[] num = new int[] {-63,-57,-1,-25};
 		int large=0;
 		int small=0;

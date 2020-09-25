@@ -1,7 +1,5 @@
 package com.iWillCode.bank;
 
-import java.util.Date;
-
 public class AccountDetails {
 	//User entered variables
 	static long baseAcctNo = 100000001;
@@ -71,6 +69,7 @@ public class AccountDetails {
 		System.out.println("Branch Code :"+branchCode);
 		System.out.println("Bank Code :"+bankCode);
 		System.out.println("Account Balance :"+acctBalance);
+		System.out.println("Reference Name :"+referenceName);
 			
 	}
 		
