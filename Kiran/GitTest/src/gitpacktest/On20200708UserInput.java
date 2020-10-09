@@ -5,19 +5,21 @@ import java.util.Scanner;
 public class On20200708UserInput {
 	public static int getUserIp () {
 		final Scanner ScnUserSel = new Scanner(System.in);
-	    int vNum1 = 0;
+	    String vNum1 = "";
 	    
 		System.out.println("Please enter the number");
-		vNum1 = ScnUserSel.nextInt();
-		    
+		vNum1 = ScnUserSel.nextLine();
+		ScnUserSel.nextLine();    
 	    ScnUserSel.close();
 	    
-	    return vNum1 ;		
+	    return Integer.parseInt(vNum1) ;		
 	} // This is for getUserIp
   public static void main(final String[] args) {
 
     final Scanner ScnUserSel = new Scanner(System.in);
-    int UserSel, Num1, Num2 = 0;
+    int UserSel = 0;
+    int Num1 = 0;
+    int Num2 = 0;
 
     System.out.println("Welcome ! Please enter a numeric selection from the options below.");
     System.out.println("1. Compare two numbers");

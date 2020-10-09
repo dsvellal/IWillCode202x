@@ -11,7 +11,7 @@ public class On20200715DateVal {
 	public static void main(String[] args) {
 		int varDate = 0 ;
 		int varMonth = 0 ; 
-		int varYear = 0 ;
+		int varYear ;
 		Scanner scnUser = new Scanner (System.in) ;
 		
 		System.out.println("This is a date checking program.");
@@ -62,7 +62,7 @@ public class On20200715DateVal {
 			System.out.println("Please enter the year. Please enter integers only.");
 			varYear = scnUser.nextInt();
 			
-			if ((varMonth == 2) && (varDate > 29)) {
+			if ((varMonth == 2) && (varDate > 29) && (varYear % 4 == 0)) {
 				System.out.println("Sorry, February can have only 29 days, maximum !") ;
 				System.out.println("This program will stop now. Please click on RUN to re-execute it.");
 				System.exit(0);

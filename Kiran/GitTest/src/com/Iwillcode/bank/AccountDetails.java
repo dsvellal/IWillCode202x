@@ -1,6 +1,6 @@
 package com.Iwillcode.bank;
 
-import java.util.Date ;
+
 
 public class AccountDetails {
 	//User entered properties follow

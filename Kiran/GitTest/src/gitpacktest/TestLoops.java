@@ -3,7 +3,6 @@ package gitpacktest;
 public class TestLoops {
 
   public static void main(final String[] args) {
-    final int i = 0;
     final String[] namesOfParticipantsOfIWillCode = { "Datta", "Kiran", "Sujay", "Sobi", "Jabeen", "KLM", "Pavithra",
         "Sapna" };
 
