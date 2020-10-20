@@ -13,5 +13,6 @@
 * Try-catch blocks
 * Methods in classes
 * Cross-class and cross-method communication
+* Testing your code via test-cases
 * Quality at desk
 * List of tools that we can use regularly (Cerberus, QAD, TICS, JSCPD, FunctionDefExtractor, UnitTestAnalytics, Sonarlint, etc.)
