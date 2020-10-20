@@ -1,9 +1,4 @@
-# Topics to discuss
-
-* Quality at desk
-* List of tools that we can use regularly (Cerberus, QAD, TICS, JSCPD, FunctionDefExtractor, UnitTestAnalytics, Sonarlint, etc.)
-
-## Topics already discussed
+# Topics already discussed
 
 * First program
 * Usage of System.out.println()
@@ -18,3 +13,5 @@
 * Try-catch blocks
 * Methods in classes
 * Cross-class and cross-method communication
+* Quality at desk
+* List of tools that we can use regularly (Cerberus, QAD, TICS, JSCPD, FunctionDefExtractor, UnitTestAnalytics, Sonarlint, etc.)
