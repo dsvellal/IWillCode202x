@@ -7,9 +7,9 @@ public class AvgOfNumbers
 		double [] arr = {19, 12, 0, 18, 17, 20};
 		double total = 0;
 		
-		for (int i=0; i<arr.length; i++)
+		for (double arrele:arr)
 		{
-			total = total + arr[i];
+			total = total + arrele;
 			
 			
 		}
