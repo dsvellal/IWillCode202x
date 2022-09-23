@@ -1,4 +1,4 @@
-package com.philips;
+package com.example;
 
 
 public class HelloWorld {
